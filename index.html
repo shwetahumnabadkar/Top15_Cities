@@ -1,0 +1,26 @@
+<html>
+<head>
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
+ <!--[if lte IE 8]>
+     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
+ <![endif]-->
+  <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+<style type="text/css">
+	#map { height: 400px; width:600px;}
+	h1 {color: black;}
+</style>
+</head>
+<body>
+<h1> Top 15 Cities - GDP wise </h1>
+<!--<p> A map of majestic area. </p>-->
+<!-- Put a div element with a certain id where you want your map-->
+	 <div id="map"></div>
+	 <!-- user javascript-->
+	 <script type="text/javascript">
+	 	var map = L.map('map').setView([28.63, 77.219], 4);
+	 	L.tileLayer('https://tiles.mapbox.com/v3/shwetahumnabadkar.Top_15_GDP/{z}/{x}/{y}.png', {
+    	attribution: "This is my map :)"
+		}).addTo(map);
+	 </script>
+</body>
+</html>
