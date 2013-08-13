@@ -6,7 +6,7 @@
  <![endif]-->
   <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
 <style type="text/css">
-	#map { height: 400px; width:600px;}
+	#map { height: 480px; width:600px;}
 	h1 {color: black;}
 </style>
 </head>
@@ -14,13 +14,18 @@
 <h1> Top 15 Cities of 2011 - GDP wise </h1>
 <!--<p> A map of majestic area. </p>-->
 <!-- Put a div element with a certain id where you want your map-->
-	 <div id="map"></div>
-	 <!-- user javascript-->
+	 <div id="map">
+	 	
+	 	<iframe width='500' height='480' frameBorder='0' src='http://a.tiles.mapbox.com/v3/shwetahumnabadkar.Top_15_GDP.html#4/24.246964554300924/82.705078125'></iframe>
+	 </div>
+
+	 <!-- user javascript
 	 <script type="text/javascript">
 	 	var map = L.map('map').setView([28.63, 77.219], 4);
 	 	L.tileLayer('https://tiles.mapbox.com/v3/shwetahumnabadkar.Top_15_GDP/{z}/{x}/{y}.png', {
     	attribution: "This is my map :)"
 		}).addTo(map);
-	 </script>
+		//https://tiles.mapbox.com/v3/shwetahumnabadkar.Top_15_GDP/4/11/6.png?updated=1376392711029
+	 </script> -->
 </body>
 </html>
